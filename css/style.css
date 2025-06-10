@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+.megrim-regular {
+  font-family: "Megrim", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.jersey-10-regular {
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* HEADER */
+header{
+    width: 100%;
+    height: auto;
+    max-height: 20%;
+    background-color: #1f2d3b;
+    color: rgb(219, 197, 74);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    border-bottom: solid 5px rgba(217, 176, 62, 0.8);
+}
+
+h1{
+    font-family: "Megrim", system-ui;
+    padding-top: 35px;
+    font-size: 170%;
+}
+
+h3{
+    font-family: "Jersey 10", sans-serif;
+    font-size: 100%;
+}
+
+/* MAIN */
+main{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(217, 176, 62, 0.6) 20%, rgb(94, 105, 86, 0.7) 80%), url(../img/backgrond/planoDeFundo2.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#bloco{
+    background-color: rgba(217, 176, 62, 0.5);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    padding: 20px;
+}
+
+.imgMain{
+    width: 90%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: 10%;
+    background-color: #152e04;
+    color: rgb(219, 197, 74);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    border-top: solid 5px rgba(217, 176, 62, 0.5);
+}

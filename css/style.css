@@ -28,6 +28,7 @@ body {
     min-height: 100vh;
     background-image: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)), 
                     url('./img/backgrond/texture.png');
+    background-image: url('./img/bgvideo/fundo.mp4');
 }
 
 /* Header */
@@ -41,7 +42,10 @@ header {
     color: var(--color-text);
 }
 
+
+
 header::before {
+    display: none;
     content: "";
     position: absolute;
     top: 0;
@@ -67,6 +71,13 @@ header h1 {
     letter-spacing: 5px;
     text-shadow: 0 0 10px rgba(255, 179, 71, 0.3);
 }
+
+.logo {
+    max-width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
 
 header h3 {
     font-family: var(--font-title);
@@ -109,6 +120,7 @@ main {
     padding: 2rem 1rem;
     width: 100%;
     color: var(--color-text);
+    z-index: 10;
 }
 
 #bloco {
@@ -394,3 +406,4 @@ footer {
 .float {
     animation: float 4s ease-in-out infinite;
 }
+

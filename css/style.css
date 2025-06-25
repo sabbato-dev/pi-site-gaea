@@ -164,6 +164,10 @@ main {
     border: 1px solid var(--color-secondary);
     border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 section {

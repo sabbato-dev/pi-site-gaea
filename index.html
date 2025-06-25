@@ -81,27 +81,43 @@
             </section>
 
             <section id="gameplay">
-                <h1>Sistema de jogo</h1>
+                <h1>Jogabilidade</h1>
                 <h2>Estrutura geral</h2>
                 <p>Card game tático com exploração linear procedural (gerado aleatóriamente). Mapas ramificados com
                     caminhos distintos e diferentes tipos de nós:</p>
 
-                <div class="game-feature">
-                    <h3>Combate</h3>
-                    O jogador começa com um baralho de 9 Cartas, entre cartas de Ataque, Defesa e Biorremediação
-                    (buff/debuff).<br>
-                    Cada carta representa uma ação distinta do jogador, com custo individual para serem jogadas. O
-                    jogador deve utilizar de sinergias para formar combos durante os turnos de batalha.<br>
-                    Ao final do combate, o jogador purifica uma zona contaminada e tem direito a escolhe uma de 3
-                    relíquias tecnológicas, itens que permitem subverter as regras do jogo ao seu favor.
-                    <br>
-                    <div class="containerMecas">
-                        <img class="player" src="./img/amigos/corredor.png" alt="Corredor">
-                        <img class="player" src="./img/amigos/mineiro.png" alt="Mineiro">
-                        <img class="player" src="./img/amigos/tank.png" alt="Corredor">
-
+                    <div class="game-feature">
+                        <h3>Combate</h3>
+                        O jogador começa com um baralho de 9 Cartas, entre cartas de Ataque, Defesa e Biorremediação (buff/debuff).<br>
+                        Cada carta representa uma ação distinta do jogador, com custo individual para serem jogadas. O jogador deve utilizar de sinergias para formar combos durante os turnos de batalha.<br>
+                        Ao final do combate, o jogador purifica uma zona contaminada e tem direito a escolhe uma de 3 relíquias tecnológicas, itens que permitem subverter as regras do jogo ao seu favor.
+                        <br>
+                        <div class="containerMecas">
+                            <div class="mecha-card">
+                                <img class="player" src="./img/amigos/corredor.png" alt="Corredor">
+                                <div class="mecha-description">
+                                    <h4>Corredor</h4>
+                                    <p>Focado em mobilidade e ataques rápidos. Excelente para estratégias de "hit-and-run".</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mecha-card">
+                                <img class="player" src="./img/amigos/mineiro.png" alt="Mineiro">
+                                <div class="mecha-description">
+                                    <h4>Mineiro</h4>
+                                    <p>Especialista em escavação e ataques pesados. Perfeito para destruir defesas inimigas.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mecha-card">
+                                <img class="player" src="./img/amigos/tank.png" alt="Tanque">
+                                <div class="mecha-description">
+                                    <h4>Tanque</h4>
+                                    <p>Focado em defesa e aguentar dano. Ideal para proteger aliados e segurar a linha de frente.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
                 <div class="game-feature">
                     <h3>Eventos</h3>
@@ -138,6 +154,30 @@
                     <br>
                     <div class="container">
                         <img src="./img/backgrond/torre.png" alt="Torre de purificação">
+                    </div>
+                </div>
+
+                <div class="game-feature">
+                    <h3>Inimigos</h3>
+                    <br>
+                    <p>Enfrente criaturas mutantes, máquinas descontroladas e inteligências artificiais corrompidas que se adaptam ao seu estilo de jogo.</p>
+                    <br>
+                    <div class="container-enemies">
+                        <div class="enemy-card">
+                            <img src="./img/inimigos/inimigoSprit/inimigo1.png" alt="Máquina Descontrolada">
+                            <h4>Máquinas Descontroladas</h4>
+                            <p>Autômatos de guerra que não reconhecem mais aliados, apenas destruição.</p>
+                        </div>
+                        <div class="enemy-card">
+                            <img src="./img/inimigos/inimigoSprit/inimigo3.png" alt="Criatura Mutante">
+                            <h4>Criaturas Mutantes</h4>
+                            <p>Formas de vida que evoluíram para sobreviver em ambientes extremos.</p>
+                        </div>
+                        <div class="enemy-card">
+                            <img src="./img/inimigos/inimigoIcon/inimigoFort.png" alt="IA Corrompida">
+                            <h4>IAs Corrompidas</h4>
+                            <p>Inteligências artificiais que desenvolveram objetivos próprios.</p>
+                        </div>
                     </div>
                 </div>
 

@@ -3,10 +3,7 @@ let telaAnterior = null;
 
 document.getElementById('fimSelecao').addEventListener('click', proximaTela);
 
-
-
 document.getElementById('lutaUm').addEventListener('click', irParaDiv2);
-document.getElementById('lutaDois').addEventListener('click', irParaDiv5);
 
 document.getElementById('lojaUm').addEventListener('click', irParaDiv2);
 document.getElementById('lojaDois').addEventListener('click', irParaDiv5);

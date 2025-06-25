@@ -13,10 +13,12 @@
 </head>
 
 <body>
-    
+    <canvas id="wave-background">
+    </canvas>
     <!-- HEADER -->
     <header>
-        
+        <canvas id="wave-background">
+        </canvas>
         <img class="logo" src="./img/logo/logo.png" alt="Logo Gaea Protocol">
         <h3>Deckbuilder Roguelike Game</h3>
         <nav>
@@ -35,26 +37,31 @@
         <div id="bloco">
             <a href="./html/jogo.html"><button>JOGAR AGORA</button></a>
             <br>
+            <br>
             <section id="about">
                 <h1>O que é o GAIA Protocol</h1>
                 <div id="gaia">
                     <div id="gaia__txt">
-                <p>Gaia Protocol é um card game tático baseado em turnos com inspiração em jogos como Slay the Spire e
-                    Deep Sky Derelicts. Ambientado na Terra devastada, você joga como um Piloto operando um mecha em
-                    missões de restauração ambiental e reconstrução civilizatória.</p>
-                <p>Cartas representam ações táticas em combate e decisões estratégicas durante eventos. Decks variam
-                    conforme o modelo de mecha, cada qual com habilidades únicas. O jogo propõe escolhas difíceis e
-                    ricas conexões com temas ecológicos e humanos.</p>
-                <p>As artes são estáticas, porém expressivas. Não há narração por voz; apenas texto, sons mecânicos e
-                    silêncio entre os ventos.</p>
+                        Em um mundo devastado, onde a natureza luta para renascer das cinzas, você é um Piloto de Mecha,
+                        um dos últimos guardiões da esperança.<br>
+                        Gaia Protocol é um card game tático baseado em turnos que mistura a profundidade estratégica de
+                        Slay the Spire com a atmosfera sombria e imersiva de Deep Sky Derelicts.<br>
+                        <br>
+                        <h3>Arte que Conta uma História</h3>
+                        <br>
+                        As ilustrações, estáticas mas intensas, capturam a desolação e a beleza oculta de um planeta à
+                        beira do colapso.<br>
+                        Sem vozes, apenas o sussurro do vento, o ranger de metal e o peso do silêncio entre as decisões.
                     </div>
-                    <img  id="gaiaImg" src="./img/amigos/20250624_1646_Holograma Futurista de Gaia_simple_compose_01jyhqg96der5rcct2xy279q5s.png" alt="">
-                    </div>
+                    <img id="gaiaImg"
+                        src="./img/amigos/20250624_1646_Holograma Futurista de Gaia_simple_compose_01jyhqg96der5rcct2xy279q5s.png"
+                        alt="">
+                </div>
                 <img class="imgMain" src="./img/backgrond/gaiaProtocol.png" alt="Mecha em paisagem devastada">
             </section>
 
             <section id="story">
-                <h1>Sinopse</h1>
+                <h1>História</h1>
                 <p>Num mundo onde a Terra foi devastada por ciclos de colapso ambiental e guerras tecnológicas, restam
                     apenas fragmentos de civilização. GAIA, uma inteligência artificial concebida no auge da antiga
                     civilização, desperta sozinha dos escombros para tentar reverter o curso da destruição.</p>
@@ -62,10 +69,8 @@
                     planetária por meio do uso de mechas. Esses pilotos percorrem regiões hostis coletando recursos,
                     purificando ambientes contaminados e reativando zonas de sobrevivência.</p>
                 <img class="imgMain" src="./img/backgrond/sinopse.png" alt="Paisagem pós-apocalíptica">
-            </section>
+                <br>
 
-            <section>
-                <h1>História</h1>
                 <p>GAIA era apenas um núcleo experimental, um sistema ambiental inteligente criado para monitorar a
                     saúde do planeta. Mas durante o último colapso - uma sucessão de guerras e mudanças climáticas
                     extremas - as redes que sustentavam a civilização foram cortadas.</p>
@@ -78,8 +83,8 @@
             <section id="gameplay">
                 <h1>Sistema de jogo</h1>
                 <h2>Estrutura geral</h2>
-                <p>Card game tático com exploração linear procedural (como Slay the Spire). Mapas ramificados com
-                    caminhos distintos e tipos de nós:</p>
+                <p>Card game tático com exploração linear procedural (gerado aleatóriamente). Mapas ramificados com
+                    caminhos distintos e diferentes tipos de nós:</p>
 
                 <div class="game-feature">
                     <h3>Combate</h3>
@@ -90,7 +95,39 @@
                     Ao final do combate, o jogador purifica uma zona contaminada e tem direito a escolhe uma de 3
                     relíquias tecnológicas, itens que permitem subverter as regras do jogo ao seu favor.
                     <div class="container">
-                        <img src="./img/backgrond/mapa.png" alt="Sistema de combate">
+                        <section id="galleryCombate">
+                
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/amigos/galeria3.png" class="d-block w-100" alt="Concept art 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/amigos/galeria1.png" class="d-block w-100" alt="Concept art 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/amigos/galeria2.png" class="d-block w-100" alt="Concept art 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
                     </div>
                 </div>
 
@@ -103,8 +140,8 @@
                     <quote>Ajudar o grupo?</quote><br>
                     <quote>Roubar a carga sorrateiramente?</quote>
                     <br>
-Você criará alianças ou ou se apoiar em ganância?
-<br>
+                    Você criará alianças ou ou se apoiar em ganância?
+                    <br>
                     <div class="container">
                         <img src="./img/backgrond/hospital.png" alt="Eventos aleatórios">
                     </div>
@@ -113,7 +150,8 @@ Você criará alianças ou ou se apoiar em ganância?
                 <div class="game-feature">
                     <h3>Loja</h3>
                     <br>
-                    <p>A loja (em desenvolvimento) será onde poderemos utilizar a moeda do jogo para a compra de novas cartas e relíquias tecnológicas</p>
+                    <p>A loja (em desenvolvimento) será onde poderemos utilizar a moeda do jogo para a compra de novas
+                        cartas e relíquias tecnológicas</p>
                     <br>
                     <div class="container">
                         <img src="./img/backgrond/loja1.png" alt="Loja de itens">
@@ -123,7 +161,8 @@ Você criará alianças ou ou se apoiar em ganância?
                 <div class="game-feature">
                     <h3>Torre de Purificação</h3>
                     <br>
-                    <p>A torre de purificação (em desenvolvimento) será onde poderemos melhorar cartas, tornando nossos ataques e técnicas ainda mais eficientes</p>
+                    <p>A torre de purificação (em desenvolvimento) será onde poderemos melhorar cartas, tornando nossos
+                        ataques e técnicas ainda mais eficientes</p>
                     <br>
                     <div class="container">
                         <img src="./img/backgrond/hospital.png" alt="Torre de purificação">
@@ -134,7 +173,8 @@ Você criará alianças ou ou se apoiar em ganância?
                     <h3>Relíquias Tecnológicas</h3>
                     <br>
                     <p>Itens que permitem subverter as regras iniciais do jogo.</p><br>
-                    <p>Podem conceder mais energia por turno, aumentar pontos de vida, permitir manipulação de baralho, permitindo criatividade do jogador</p>
+                    <p>Podem conceder mais energia por turno, aumentar pontos de vida, permitir manipulação de baralho,
+                        permitindo criatividade do jogador</p>
                     <br>
                     <div class="container">
                         <img src="./img/backgrond/mapa.png" alt="Artefatos especiais">
@@ -214,8 +254,8 @@ Você criará alianças ou ou se apoiar em ganância?
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="./js/script.js" defer></script>
-    
-    
+
+
 </body>
 
 </html>

@@ -111,6 +111,32 @@ main {
     color: var(--color-text);
 }
 
+#gaia{
+    display: flex;
+    justify-content: center;
+}
+
+#gaiaImg {
+    max-width: 50%;
+    height: auto;
+}
+
+#gaiaImg:hover {
+    transform: scale(1.01);
+    transition: transform 0.3s ease;
+}
+
+#gaia__txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    color: var(--color-text);
+    font-size: 1.3rem;
+}
+
 #bloco {
     background-color: rgba(30, 43, 34, 0.8);
     padding: 2rem;
@@ -162,9 +188,15 @@ p {
 }
 
 /* Images */
+.carousel-inner{
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: cover
+}
+
 .imgMain {
     width: 100%;
-    max-height: 500px;
+    max-height: 750px;
     object-fit: cover;
     margin: 1.5rem 0;
     border: 3px solid var(--color-secondary);
@@ -343,6 +375,25 @@ footer {
 }
 
 /* Responsividade */
+@media (max-width: 1020px) {
+    #gaia{
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/amigos/20250624_1646_Holograma\ Futurista\ de\ Gaia_simple_compose_01jyhqg96der5rcct2xy279q5s.png);
+    background-size: 100% 100%;
+    height: 100vh;
+    background-color: #114211a9;
+    border-radius: 25px;
+    text-shadow: #121212 1px 1px 1px;
+}
+
+    #gaiaImg {
+        display: none;
+    max-width: 50%;
+    height: auto;
+}
+}
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5rem;

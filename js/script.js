@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, 100);
 
+    
+
     // Scroll suave para links de navegação
     document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -82,6 +84,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, 1500);
 });
+
+
 
 // background.js
 document.addEventListener('DOMContentLoaded', function() {

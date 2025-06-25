@@ -238,6 +238,19 @@ p {
     padding-left: 1rem;
 }
 
+.containerMecas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.player {
+    width: 300px;
+    height: auto;
+}
+
 .container {
     background-color: rgba(26, 26, 26, 0.7);
     padding: 1.5rem;

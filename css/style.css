@@ -500,6 +500,7 @@ button {
   padding: 1rem 2rem;
   font-family: var(--font-title);
   text-transform: uppercase;
+  width: 6%;
   letter-spacing: 2px;
   cursor: pointer;
   transition: all 0.3s ease;

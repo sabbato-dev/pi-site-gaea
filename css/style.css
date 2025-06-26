@@ -510,6 +510,10 @@ button {
   box-shadow: 0 4px 8px rgba(255, 107, 53, 0.3);
 }
 
+.jogo {
+    width: 100%;
+}
+
 button:hover {
   background-color: var(--color-warning);
   transform: translateY(-3px);

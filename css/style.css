@@ -19,9 +19,22 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative;
+    background-image: none;
+    background-color: transparent;
     /* background-image: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9));  */
     /* background-image: url('./../img/bgvideo/fundo.gif'); */
+}
 
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.9);
+    z-index: -1;
 }
 
 canvas {
@@ -140,7 +153,14 @@ main {
 
 #gaia__txt {
     order: 1;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    color: var(--color-text);
+    font-size: 1.3rem;
 }
 
 #gaia-img-container {
@@ -324,36 +344,9 @@ main {
     line-height: 1.4;
 }
 
-.player {
-    width: 100%;
-    height: auto;
-    border-radius: 5px 5px 0 0;
-    border: 1px solid var(--color-accent);
-    border-bottom: none;
-}
-
-
-
-#gaia{
-    display: flex;
-    justify-content: center;
-}
-
-
  #gaiaImg:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease-in-out;
-}
-
-#gaia__txt{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    text-align: center;
-    color: var(--color-text);
-    font-size: 1.3rem;
 }
 
 #bloco {
@@ -449,8 +442,11 @@ p {
 }
 
 .player {
-    width: 300px;
+    width: 100%;
     height: auto;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid var(--color-accent);
+    border-bottom: none;
 }
 
 .container {
@@ -648,55 +644,40 @@ footer {
     opacity: 0.15;
 }
 
-body {
-    position: relative;
-    background-image: none;
-    background-color: transparent;
-}
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(18, 18, 18, 0.9);
-    z-index: -1;
-}
 
 /* MEDIA QUERIES */
 
-/* Desktop (1024px+) */
-@media (min-width: 1024px) {
-    #gaia {
-        display: flex;
-        flex-direction: row;
-        max-width: 1200px;
-        margin: 0 auto;
+/* Pequenos smartphones (menos de 400px) */
+@media (min-width: 320px) {
+    #gaia__txt {
+        padding: 0.5rem;
     }
 
-    #gaiaImg {
-        width: 100vw;
-        height: auto;
+    #bloco{
+        min-width: 370px;
     }
-    
-    #gaia__txt {
-        flex: 1.2;
-    }
-    
-    #gaia-img-container {
-        flex: 1;
-    }
-    
+
     .intro-text {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
+    }
+    
+    .game-description {
+        font-size: 1rem;
+    }
+    
+    .art-section h3 {
+        font-size: 1.2rem;
+    }
+
+     .map-nodes li {
+        font-size: 0.9rem;
     }
 }
 
 /* Tablets (768px) */
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     header {
         padding: 1rem; /* Reduz o padding em telas pequenas */
     }
@@ -810,30 +791,32 @@ body::before {
     }
 }
 
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+    #gaia {
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 
-/* Pequenos smartphones (menos de 400px) */
-@media (max-width: 320px) {
+    #gaiaImg {
+        width: 100vw;
+        height: auto;
+    }
+    
     #gaia__txt {
-        padding: 0.5rem;
-    }
-
-    #bloco{
-        min-width: 370px;
-    }
-
-    .intro-text {
-        font-size: 1.1rem;
+        flex: 1.2;
     }
     
-    .game-description {
-        font-size: 1rem;
+    #gaia-img-container {
+        flex: 1;
     }
     
-    .art-section h3 {
-        font-size: 1.2rem;
+    .intro-text, .game-description  {
+        font-size: 1.3rem;
     }
 
-     .map-nodes li {
-        font-size: 0.9rem;
-    }
+
 }
+

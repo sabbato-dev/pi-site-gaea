@@ -176,13 +176,18 @@ main {
     order: 2;
     display: flex;
     justify-content: center;
+    width: 50%; /* ajusta o tamanho da imagem para 50% do tamanho da div pai */
+  max-width: 100%; /* garante que a imagem não ultrapasse o tamanho máximo da div pai */
+  height: auto; /* ajusta a altura da imagem para manter a proporção */
 }
 
 #gaiaImg {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    
+    width: 100%; /* ajusta o tamanho da imagem para 100% do tamanho da div pai */
+  height: auto; /* ajusta a altura da imagem para manter a proporção */
+  object-fit: cover; /* garante que a imagem seja cortada para manter a proporção */
 }
 
 .intro-text {
@@ -278,6 +283,83 @@ main {
     
     .art-section h3 {
         font-size: 1.2rem;
+    }
+}
+
+/* Estilos para a seção do mapa */
+.map-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.map-image-container {
+    border: 2px solid var(--color-accent);
+    border-radius: 8px;
+    padding: 0.5rem;
+    background-color: rgba(26, 26, 26, 0.7);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.map-description {
+    padding: 1rem;
+    background-color: rgba(30, 43, 34, 0.6);
+    border-left: 3px solid var(--color-warning);
+    border-radius: 0 8px 8px 0;
+}
+
+.map-nodes {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+.map-nodes li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.8rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.map-nodes li::before {
+    content: "■";
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.node-combat::before { color: #ff6b35; }
+.node-event::before { color: #ffb347; }
+.node-shop::before { color: #7a9c6e; }
+.node-tower::before { color: #c8e0b8; }
+.node-boss::before { color: #d62828; }
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .map-container {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .map-image-container {
+        flex: 1;
+    }
+    
+    .map-description {
+        flex: 1;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-nodes li {
+        font-size: 0.9rem;
     }
 }
 

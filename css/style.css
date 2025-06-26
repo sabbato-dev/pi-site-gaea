@@ -82,9 +82,36 @@ header h1 {
 }
 
 .logo {
-    max-width: 600px;
+    max-width: 100%; /* Alterado de 600px para 100% */
+    width: 40%; /* Controla o tamanho máximo */
+    height: auto;
     margin: 0 auto;
     display: block;
+    min-width: 250px; /* Largura mínima para manter legibilidade */
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem; /* Reduz o padding em telas pequenas */
+    }
+    
+    header h1 {
+        font-size: 2rem; /* Reduz o tamanho do título */
+        margin-top: 0.5rem;
+    }
+    
+    header h3 {
+        font-size: 1rem; /* Reduz o subtítulo */
+    }
+    
+    nav ul {
+        gap: 0.5rem; /* Reduz o espaço entre itens do menu */
+    }
+    
+    nav a {
+        padding: 0.3rem 0.5rem; /* Reduz o padding dos links */
+        font-size: 0.9rem;
+    }
 }
 
 
@@ -130,6 +157,128 @@ main {
     width: 100%;
     color: var(--color-text);
     z-index: 10;
+}
+
+/* Estilo base para todas as telas */
+#gaia {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+#gaia__txt {
+    order: 1;
+    padding: 1rem;
+}
+
+#gaia-img-container {
+    order: 2;
+    display: flex;
+    justify-content: center;
+}
+
+#gaiaImg {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    color: var(--color-highlight);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.game-description {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.art-section h3 {
+    color: var(--color-warning);
+    margin: 1.5rem 0 1rem;
+    font-size: 1.4rem;
+}
+
+.art-section p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Tablet (768px+) */
+@media (min-width: 768px) {
+    #gaia {
+        flex-direction: row;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    #gaia__txt {
+        flex: 1;
+        padding-right: 2rem;
+        order: initial;
+    }
+    
+    #gaia-img-container {
+        flex: 1;
+        order: initial;
+    }
+    
+    #gaiaImg {
+        max-width: 90%;
+    }
+    
+    .intro-text {
+        font-size: 1.3rem;
+    }
+    
+    .game-description {
+        font-size: 1.2rem;
+    }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+    #gaia {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    #gaia__txt {
+        flex: 1.2;
+    }
+    
+    #gaia-img-container {
+        flex: 0.8;
+    }
+    
+    .intro-text {
+        font-size: 1.4rem;
+    }
+}
+
+/* Pequenos smartphones (menos de 400px) */
+@media (max-width: 400px) {
+    #gaia__txt {
+        padding: 0.5rem;
+    }
+    
+    .intro-text {
+        font-size: 1.1rem;
+    }
+    
+    .game-description {
+        font-size: 1rem;
+    }
+    
+    .art-section h3 {
+        font-size: 1.2rem;
+    }
 }
 
 /* Seção de Inimigos */

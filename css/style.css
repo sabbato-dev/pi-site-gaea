@@ -1,10 +1,3 @@
-/* Reset e Base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 :root {
     --color-primary: #1e2b22;
     --color-secondary: #3a4a3a;
@@ -90,29 +83,7 @@ header h1 {
     min-width: 250px; /* Largura mínima para manter legibilidade */
 }
 
-@media (max-width: 768px) {
-    header {
-        padding: 1rem; /* Reduz o padding em telas pequenas */
-    }
-    
-    header h1 {
-        font-size: 2rem; /* Reduz o tamanho do título */
-        margin-top: 0.5rem;
-    }
-    
-    header h3 {
-        font-size: 1rem; /* Reduz o subtítulo */
-    }
-    
-    nav ul {
-        gap: 0.5rem; /* Reduz o espaço entre itens do menu */
-    }
-    
-    nav a {
-        padding: 0.3rem 0.5rem; /* Reduz o padding dos links */
-        font-size: 0.9rem;
-    }
-}
+
 
 
 header h3 {
@@ -215,76 +186,7 @@ main {
     line-height: 1.6;
 }
 
-/* Tablet (768px+) */
-@media (min-width: 768px) {
-    #gaia {
-        flex-direction: row;
-        align-items: center;
-        padding: 2rem;
-    }
-    
-    #gaia__txt {
-        flex: 1;
-        padding-right: 2rem;
-        order: initial;
-    }
-    
-    #gaia-img-container {
-        flex: 1;
-        order: initial;
-    }
-    
-    #gaiaImg {
-        max-width: 90%;
-    }
-    
-    .intro-text {
-        font-size: 1.3rem;
-    }
-    
-    .game-description {
-        font-size: 1.2rem;
-    }
-}
 
-/* Desktop (1024px+) */
-@media (min-width: 1024px) {
-    #gaia {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    
-    #gaia__txt {
-        flex: 1.2;
-    }
-    
-    #gaia-img-container {
-        flex: 0.8;
-    }
-    
-    .intro-text {
-        font-size: 1.4rem;
-    }
-}
-
-/* Pequenos smartphones (menos de 400px) */
-@media (max-width: 400px) {
-    #gaia__txt {
-        padding: 0.5rem;
-    }
-    
-    .intro-text {
-        font-size: 1.1rem;
-    }
-    
-    .game-description {
-        font-size: 1rem;
-    }
-    
-    .art-section h3 {
-        font-size: 1.2rem;
-    }
-}
 
 /* Estilos para a seção do mapa */
 .map-container {
@@ -341,27 +243,7 @@ main {
 .node-tower::before { color: #c8e0b8; }
 .node-boss::before { color: #d62828; }
 
-/* Responsividade */
-@media (min-width: 768px) {
-    .map-container {
-        flex-direction: row;
-        align-items: center;
-    }
-    
-    .map-image-container {
-        flex: 1;
-    }
-    
-    .map-description {
-        flex: 1;
-    }
-}
 
-@media (max-width: 480px) {
-    .map-nodes li {
-        font-size: 0.9rem;
-    }
-}
 
 /* Seção de Inimigos */
 .container-enemies {
@@ -408,18 +290,7 @@ main {
     color: var(--color-highlight);
 }
 
-/* Responsividade para cards de inimigos */
-@media (max-width: 768px) {
-    .container-enemies {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .enemy-card {
-        width: 100%;
-        max-width: 350px;
-    }
-}
+
 
 /* Estilos para os cards de mecha */
 .mecha-card {
@@ -461,31 +332,17 @@ main {
     border-bottom: none;
 }
 
-/* Ajuste para responsividade */
-@media (max-width: 768px) {
-    .containerMecas {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .mecha-card {
-        margin-bottom: 2rem;
-    }
-}
+
 
 #gaia{
     display: flex;
     justify-content: center;
 }
 
-#gaiaImg {
-    max-width: 50%;
-    height: auto;
-}
 
-#gaiaImg:hover {
-    transform: scale(1.01);
-    transition: transform 0.3s ease;
+ #gaiaImg:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 #gaia__txt{
@@ -757,56 +614,7 @@ footer {
     letter-spacing: 1px;
 }
 
-/* Responsividade */
-@media (max-width: 1020px) {
-    #gaia{
-    display: flex;
-    justify-content: center;
-    background-image: url(../img/amigos/20250624_1646_Holograma\ Futurista\ de\ Gaia_simple_compose_01jyhqg96der5rcct2xy279q5s.png);
-    background-size: 100% 100%;
-    height: 100vh;
-    background-color: #114211a9;
-    border-radius: 25px;
-    text-shadow: #121212 1px 1px 1px;
-}
 
-    #gaiaImg {
-        display: none;
-    max-width: 50%;
-    height: auto;
-}
-}
-
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5rem;
-    }
-    
-    header h3 {
-        font-size: 1.2rem;
-    }
-    
-    nav ul {
-        gap: 1rem;
-    }
-    
-    main {
-        padding: 1rem;
-    }
-    
-    #bloco {
-        padding: 1.5rem;
-    }
-    
-    h1 {
-        font-size: 2rem;
-    }
-    
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-}
 
 /* Efeitos especiais */
 @keyframes pulse {
@@ -855,4 +663,177 @@ body::before {
     height: 100%;
     background: rgba(18, 18, 18, 0.9);
     z-index: -1;
+}
+
+/* MEDIA QUERIES */
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+    #gaia {
+        display: flex;
+        flex-direction: row;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #gaiaImg {
+        width: 100vw;
+        height: auto;
+    }
+    
+    #gaia__txt {
+        flex: 1.2;
+    }
+    
+    #gaia-img-container {
+        flex: 1;
+    }
+    
+    .intro-text {
+        font-size: 1.4rem;
+    }
+}
+
+/* Tablets (768px) */
+
+@media (max-width: 768px) {
+    header {
+        padding: 1rem; /* Reduz o padding em telas pequenas */
+    }
+    
+    header h1 {
+        font-size: 2rem; /* Reduz o tamanho do título */
+        margin-top: 0.5rem;
+    }
+    
+    header h3 {
+        font-size: 1rem; /* Reduz o subtítulo */
+    }
+    
+    nav ul {
+        gap: 0.5rem; /* Reduz o espaço entre itens do menu */
+    }
+    
+    nav a {
+        padding: 0.3rem 0.5rem; /* Reduz o padding dos links */
+        font-size: 0.9rem;
+    }
+
+    #gaia {
+        flex-direction: row;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    #gaia__txt {
+        flex: 1;
+        padding-right: 2rem;
+        order: initial;
+    }
+    
+    #gaia-img-container {
+        flex: 1;
+        order: initial;
+    }
+    
+    #gaiaImg {
+        max-width: 90%;
+    }
+    
+    .intro-text {
+        font-size: 1.3rem;
+    }
+    
+    .game-description {
+        font-size: 1.2rem;
+    }
+
+    .map-container {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .map-image-container {
+        flex: 1;
+    }
+    
+    .map-description {
+        flex: 1;
+    }
+
+    .container-enemies {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .enemy-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .containerMecas {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mecha-card {
+        margin-bottom: 2rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    header h3 {
+        font-size: 1.2rem;
+    }
+    
+    nav ul {
+        gap: 1rem;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    #bloco {
+        padding: 1.5rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+
+/* Pequenos smartphones (menos de 400px) */
+@media (max-width: 320px) {
+    #gaia__txt {
+        padding: 0.5rem;
+    }
+
+    #bloco{
+        min-width: 370px;
+    }
+
+    .intro-text {
+        font-size: 1.1rem;
+    }
+    
+    .game-description {
+        font-size: 1rem;
+    }
+    
+    .art-section h3 {
+        font-size: 1.2rem;
+    }
+
+     .map-nodes li {
+        font-size: 0.9rem;
+    }
 }
